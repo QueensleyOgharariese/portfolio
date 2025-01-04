@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q.O</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="portfolio.html">Q.O</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">.About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">.experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">.Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">.Contacts</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="hero d-flex align-items-center justify-content-center text-center text-light">
+    <div class="welcome">
+        <h1 id="welcome-text"></h1>
+    </div>
+</main>
+<section class="code-section py-5" id="about">
+  <div class="container">
+    <div class="row justify-content-center">
+      <!-- Colonna per il blocco di codice -->
+      <div class="col-12 col-md-8 order-1 order-md-0">
+        <div class="code-block">
+          <div class="opening-tag">&lt;h1&gt;</div>
+          <div class="content">
+            Hi! <i class="fas fa-handshake"></i> I'm Ogharariese Queensley, a passionate learner driven by creativity and hard work.
+            I embrace challenges as opportunities to grow and always give my best with positivity and dedication. 
+            Ready to learn, improve, and achieve great things—one step at a time! <i class="fas fa-rocket"></i>
+          </div>
+          <div class="closing-tag">&lt;/h1&gt;</div>
+        </div>
+      </div>
+            <div class="col-12 col-md-4 order-0 order-md-1">
+        <div class="about-me-image">
+          <img src="media/img/girl-code.svg" alt="About Me">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+<!-- Timeline Section -->
+  <div class="container py-5" id="experience">
+    <h2 class="section-title text-center mb-5" >
+        <i class="fas fa-briefcase"></i>
+    Experience</h2>
+
+    <div class="timeline-right">
+
+      <!-- Education Section -->
+      <div class="timeline-item" data-aos="fade-up" >
+        <div class="timeline-content">
+          <h5>High School Diploma - Lorgna Pindemonte</h5>
+          <p>Information Systems for Business</p>
+          <p class="date">2017-2023</p>
+          <p>During this program, I studied business-oriented IT and web development, gaining foundational knowledge in programming, 
+             database management, and creating digital solutions tailored to organizational needs.
+          </p>
+        </div>
+        <div class="timeline-circle" style="background-color: #fff;">
+          <i class="fas fa-school"></i>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay=" 100">
+        <div class="timeline-content">
+          <h5> Advanced Program in Web Development - ITS LAST ACADEMY</h5>
+          <p class="date">2023-2025</p>
+          <p>Completed a two-year advanced program specializing in web development, with an emphasis on web design.
+             Gained expertise in creating responsive and visually appealing user interfaces, focusing on usability and delivering engaging digital experiences.
+          </p>
+        </div>
+        <div class="timeline-circle" style="background-color: #fff;">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+      </div>
+      <!-- work -->
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="timeline-content">
+          <h5>Web designer - Risolvity</h5>
+          <p class="date">2024</p>
+          <p>I worked on creating and designing websites, ensuring an intuitive user experience and responsive layouts.
+             Additionally, I handled the development process and implemented SEO strategies to enhance site performance and search engine visibility.
+
+          </p>
+        </div>
+        <div class="timeline-circle"  style="background-color: #fff;">
+          <i class="fas fa-code"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+   <h2 class="mb-4" id="skills"> Skills</h2>
+   <div id="skills">
+    <div class="col-lg-6">
+      <!-- Skillbar 1 -->
+      <div class="skillbar clearfix" data-percent="95%">
+        <div class="skillbar-title" style="background: #03DAC6;">
+          <span>HTML5</span>
+        </div>
+        <div class="skillbar-bar"></div>
+        <div class="skill-bar-percent">95%</div>
+      </div>
+  
+      <!-- Skillbar 2 -->
+      <div class="skillbar clearfix" data-percent="85%">
+        <div class="skillbar-title" style="background: #03DAC6;">
+          <span>CSS3</span>
+        </div>
+        <div class="skillbar-bar"></div>
+        <div class="skill-bar-percent">85%</div>
+      </div>
+  
+      <!-- Skillbar 3 -->
+      <div class="skillbar clearfix" data-percent="65%">
+        <div class="skillbar-title" style="background: #03DAC6;">
+          <span>JavaScript</span>
+        </div>
+        <div class="skillbar-bar"></div>
+        <div class="skill-bar-percent">65%</div>
+      </div>
+      <!-- Skillbar 4 -->
+      <div class="skillbar clearfix" data-percent="70%">
+        <div class="skillbar-title" style="background: #03DAC6;">
+          <span>Bootstrap5</span>
+        </div>
+        <div class="skillbar-bar"></div>
+        <div class="skill-bar-percent">70%</div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<section class="container text-center my-5 py-5" data-aos="fade-up">
+  <h2 class="mb-4">Design Skills</h2>
+  <div class="row justify-content-center g-4">
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="skill-icon">
+        <img src="media/img/icons8-figma.svg" alt="Figma" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="skill-icon">
+        <img src="media/img/illustrator.svg" alt="Illustrator" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="skill-icon">
+        <img src="media/img/photoshop.svg" alt="Photoshop" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="skill-icon">
+        <img src="media/img/canva-svgrepo-com.svg" alt="Canva" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="skill-icon">
+        <img src="media/img/wordpress-svgrepo-com.svg" alt="WordPress" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="skill-icon">
+        <img src="media/img/dreamwear.svg" alt="Dreamwear" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <div class="container seo-section">
+    <h2 class="seo-title">SEO Skills</h2>
+    <div class="seo-cards" data-aos="fade-up">
+
+      <!-- SEOZoom -->
+      <div class="seo-card">
+        <div class="seo-card-content">
+          <i class="fas fa-search"></i>
+          <h5>SEOZoom</h5>
+          <p>Ottimizzazione avanzata per parole chiave e analisi dei competitor.</p>
+        </div>
+      </div>
+
+      <!-- Page Speed -->
+      <div class="seo-card">
+        <div class="seo-card-content">
+          <i class=" fas fa-tachometer-alt"></i>
+          <h5>Page Speed</h5>
+          <p>Ottimizza le prestazioni per migliorare l'esperienza utente.</p>
+        </div>
+      </div>
+
+      <!-- Google My Business -->
+      <div class="seo-card">
+        <div class="seo-card-content">
+            <i class="fas fa-map-signs"></i>
+            <h5>Google My Business</h5>
+          <p>Migliora la tua presenza online nelle ricerche locali.</p>
+        </div>
+      </div>
+
+      <!-- Meta Business -->
+      <div class="seo-card">
+        <div class="seo-card-content">
+            <i class="fas fa-store"></i>
+            <h5>Meta Business</h5>
+          <p>Gestisci campagne pubblicitarie su Facebook e Instagram.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="contact-section py-5" id="contact">
+    <div class="container" >
+      <div class="contact-card d-flex justify-content-between align-items-center">
+        <!-- Left Content -->
+        <div>
+          <h2>Contact Me</h2>
+          <p class="mt-4">Let's connect and build something amazing together!</p>
+          <div class="contact-links d-flex justify-content-center align-items-center mt-4">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/queensley-ogharariese-b581222b9/" target="_blank" class="me-4" title="Visit LinkedIn">
+              <i class="fab fa-linkedin"></i> 
+            </a>
+            <!-- Email -->
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ogharariesequeensley@gmail.com" title="Send me an email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Right Content -->
+        <!-- <div class="text-center">
+          <h2>Download CV</h2>
+          <button class="download-btn" onclick="downloadResume()">
+            <i class="fas fa-download me-2" ></i>Download CV
+          </button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer text-light py-4 position-relative">
+    <div class="container text-center">
+      <p class="mb-2">Made with <i class="fas fa-heart"></i> in 2025</p>
+      <p class="mb-0">&copy; 2025 Q.O. All Rights Reserved.</p>
+    </div>
+  </footer>  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
+  <script src="scripts.js"></script>
+</body>
+</html>
