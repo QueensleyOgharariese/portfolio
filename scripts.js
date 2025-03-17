@@ -29,7 +29,6 @@ function eraseText() {
 // progress-bar
 
   $(document).ready(function() {
-    // Funzione per animare le skillbars quando sono visibili
     function animateSkillbars() {
       var windowHeight = $(window).height();
       var windowTop = $(window).scrollTop();
@@ -39,12 +38,12 @@ function eraseText() {
         // Animiamo le skillbars solo una volta
         $('.skillbar-bar').each(function() {
           var $this = $(this);
-          if (!$this.hasClass('animated')) { // Controlla se la barra è già animata
-            var percentage = $this.parent().data('percent'); // Otteniamo la percentuale da data-percent
+          if (!$this.hasClass('animated')) { 
+            var percentage = $this.parent().data('percent'); 
             $this.animate({
               width: percentage
-            }, 1500); // 1500ms per l'animazione
-            $this.addClass('animated'); // Impostiamo la classe per evitare che venga animata più volte
+            }, 1500); 
+            $this.addClass('animated'); 
           }
         });
       }
@@ -55,9 +54,20 @@ function eraseText() {
       animateSkillbars();
     });
 
-    // Eseguiamo la funzione anche al caricamento della pagina, per assicurarsi che le skillbar vengano animate correttamente
     animateSkillbars();
   });
+  function downloadResume() {
+    const filePath = document.querySelector('.download-btn').getAttribute('data-file');
+    const fileName = filePath.split('/').pop();
+  
+    const link = document.createElement('a');
+    link.href = filePath;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+      alert('Download avviato!');
+  }
 
 
 
