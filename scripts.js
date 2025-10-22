@@ -35,7 +35,7 @@ function eraseText() {
       var skillbarTop = $('#skills').offset().top;
 
       if (windowTop + windowHeight > skillbarTop) {
-        // Animiamo le skillbars solo una volta
+        // Animazione delle skillbars solo una volta
         $('.skillbar-bar').each(function() {
           var $this = $(this);
           if (!$this.hasClass('animated')) { 

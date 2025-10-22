@@ -672,7 +672,7 @@ body {
     animation: rotate 10s linear infinite;
     z-index: 1;
   }
-  @keyframes rotate {
+  @keyframes rotate{
     from {
       transform: rotate(0);
     }
